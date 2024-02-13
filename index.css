@@ -1,0 +1,219 @@
+body{
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  
+  background-size: contain;
+}
+.background{
+
+  display:block;
+  justify-content: center;
+  
+  background: rgb(41,40,40);
+  background: linear-gradient(180deg, rgba(41,40,40,1) 0%, rgba(43,43,43,1) 27%, rgb(61, 61, 61) 100%);
+  
+  box-shadow: rgba(91, 90, 90, 0.25) 0px 54px 55px, rgba(91, 91, 91, 0.25) 0px -12px 30px, rgba(91, 91, 91, 0.12) 0px 4px 6px, rgba(145, 145, 145, 0.17) 0px 12px 13px, rgba(92, 92, 92, 0.09) 0px -3px 5px;
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing:border-box;
+}
+nav{
+  background: rgba(156, 153, 153, 0.104);
+  height: 55px;
+  width:100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 55px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right:20px;
+}
+nav ul li{
+  display:inline-block ;
+  line-height: 55px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size:17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: rgba(35, 35, 35, 0.37);
+  transition: .5s ease;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 55px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media(max-width:952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+
+  }
+}
+@media(max-width:858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    
+    height: 100vh;
+    background: rgb(33, 33, 33);
+    top:95px;
+    left:-100%;
+    text-align: center;
+    transition:all .5s ease ;
+  }
+  nav ul li{
+    display: block;
+    margin:50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background:none;
+    color: rgb(139, 38, 38);
+  }
+  #check:checked ~ ul{
+    left:0;
+
+  }
+}
+.text{
+  display: inline-block;
+  border: solid;
+  height:30px;
+  margin: 100px 0px 0px 100px;
+}
+
+.image-style1 {
+  height: 50px;
+  width: 90px;
+
+}
+
+
+@import url(https://fonts.bunny.net/css?family=amita:700);
+
+body {
+    background: url(https://res.cloudinary.com/ritalbradley/image/upload/v1657644013/pexels-elijah-o_donnell-3473569_o7ohfd.jpg)
+        center center/cover no-repeat;
+    min-height: 100vh;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #fefae0;
+    font-family: Amita;
+    margin: 20px auto;
+    width: 450px;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 10px double #bc6c25;
+}
+
+.common-image {
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    border: 10px solid #fefae0;
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    transition-duration: 1s;
+}
+
+.common-image:hover {
+    border: 5px solid #fff;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: none;
+    filter: none;
+}
+
+footer {
+    background-color: #5a5755;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    min-width: 100vw;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mySlides {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.fade {
+  animation: fade 3s ease-in-out infinite;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
