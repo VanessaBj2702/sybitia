@@ -61,7 +61,7 @@
     </span>
 
     <span class="icon-home">
-      <a href="homepage.html"><ion-icon name="home">
+      <a href="index.php"><ion-icon name="home">
       </ion-icon></a>
       
     </span>
