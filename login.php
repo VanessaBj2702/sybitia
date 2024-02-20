@@ -1,8 +1,8 @@
 <?php
 	$servername = "localhost";
 	$username = "root";
-	$password = "1234";
-	$database = "project";
+	$password = "";
+	$database = "oop";
 
 	try {
 	  $connection = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
@@ -15,7 +15,7 @@
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$password = $_POST['password'];
-		$sql = "INSERT INTO users ( name, email, password) VALUES (?,?,?)";
+		$sql = "INSERT INTO Users1 ( name, email, password) VALUES (?,?,?)";
 		$connection->prepare($sql)->execute([$name, $email, $password]);
 	}
 
@@ -24,7 +24,7 @@
   if ( isset( $_POST['submit2'] ) ) {
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $stmt = $connection->prepare("SELECT * FROM users WHERE email = ? AND password = ?"); 
+    $stmt = $connection->prepare("SELECT * FROM users1 WHERE email = ? AND password = ?"); 
     $stmt->execute([ $email, $password ]); 
     $user = $stmt->fetch();
     if ( $user ) {
